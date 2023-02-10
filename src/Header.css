@@ -1,0 +1,56 @@
+.thememode {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 2% 2%;
+}
+
+.ButtonMode {
+    position: relative;
+    background-color: whitesmoke;
+    height: 2.5rem;
+    width: 5rem;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0px 0px 1px black,
+                inset 4px 4px 5px #cecece,
+                inset -4px -4px 5px #c2c2c2;
+}
+
+.mode {
+    position: absolute;
+    background-color: linear-gradient(145deg, #d8d8d8, #fff);
+    top: 0;
+    left: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 25px;
+    transform: scale(0.7);
+    box-shadow: 1px 1px 8px rgb(0, 0, 0),
+                -1px -1px 8px rgb(131, 131, 131);
+    transition: 0.3s;
+}
+
+.darkmodebutton {
+    left: 2.5rem;
+    background-color: black;
+    box-shadow: inset 4px 4px 5px rgb(68, 68, 68),
+                inset -4px -4px 5px black;
+}
+
+.lightmodebutton {
+    left: 0rem;
+}
+
+.darkmodebuttonback {
+    background-color: rgb(38, 37, 48);
+    box-shadow: 0px 0px 1px black,
+                inset 4px 4px 5px black,
+                inset -4px -4px 5px #1d1d1d;
+    transition: 0.3s;
+}
+
+.lightmodebuttonback {
+    background-color: whitesmoke;
+    transition: 0.3s;
+}

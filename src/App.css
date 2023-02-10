@@ -1,0 +1,32 @@
+.Container{
+  height: 100vh;
+  width: 100vw;
+}
+
+.ContainerHeader {
+  height: 20%;
+}
+
+.LightTheme {
+  background-color: lightgray;
+  transition: 0.3s;
+  color: rgb(56, 54, 54);
+  font-size: 1.5rem;
+}
+
+.DarkTheme {
+    background-color: rgb(38, 37, 48);
+    transition: 0.3s;
+    color: lightgray;
+    font-size: 1.5rem;
+}
+
+.BodyContainer{
+  height: 60%;
+}
+
+.WelcomeContainer {
+  display: flex;
+  justify-content: center;
+  font-size: larger;
+}
