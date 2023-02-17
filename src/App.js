@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './App.css';
 import './Header.css';
+import { PrincipalPage } from './views/Principalpage';
 
 export const App = () => {
 
@@ -15,12 +16,9 @@ export const App = () => {
             <span onClick={() => setOnThemeChange(!theme)} className={`mode ${theme === true ? "lightmodebutton" : "darkmodebutton" } `}></span>
           </div>
         </nav>
-        {theme === true ? "LightTheme" : "Dark Theme"}
       </header>
       <main className='BodyContainer'>
-        <div className='WelcomeContainer'>
-          <h3>Welcome to my Page</h3>
-        </div>
+       <PrincipalPage theme={theme} />
       </main>
     </div>
   );

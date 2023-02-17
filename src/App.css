@@ -22,11 +22,179 @@
 }
 
 .BodyContainer{
+  display: inline-flex;
   height: 60%;
+  width: 100%;
 }
 
 .WelcomeContainer {
+  width: 50%;
+  display: block;
+  padding-left: 2.5%;
+  padding-top: 8%;
+  font-size: larger;
+}
+
+.ImgContainer{
   display: flex;
   justify-content: center;
-  font-size: larger;
+}
+
+.img{
+  background-image: url('./img/me.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px black;
+}
+
+.WelcomeMessageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.RightSideWelcome{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+
+.ContainerEducation{
+  padding-top: 14%;
+}
+
+.Education{
+  height: fit-content;
+  width: 100%;
+}
+
+.hr{
+  height: 1.5px;
+  background-color: black;
+  border: 0;
+}
+
+.ChangePage{
+  height: 30px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: lightgray;
+  box-shadow: 0px 0px 2px black;
+  transition: 0.3s;
+}
+
+.ChangePage:hover{
+  transform: scale(1.1);
+  background-color: rgb(188, 188, 188);
+  box-shadow: 0 0 7px black;
+}
+
+.ChangePage:active{
+  transition: 0.1;
+  transform: scale(0.9);
+  background-color: darkgray;
+  box-shadow: 0 0 1px black;
+}
+
+.buttons{
+  width: 100%;
+  position: fixed;
+  height: 70%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.PreviousPage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.Previous{
+  width: 0; 
+  height: 0; 
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent; 
+  
+  border-right:8px solid rgb(38, 37, 48);
+}
+
+.NextPage{
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.Next{
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid rgb(38, 37, 48);;
+}
+
+.lightmodebuttonprev, .lightmodebuttonnext{
+  background-color: lightgray;
+  transform: 0.3s;
+}
+
+.darkmodebuttonbackprev, .darkmodebuttonbacknext{
+  background-color: rgb(38, 37, 48);
+  transition: 0.3s;
+}
+
+.lightnext{
+  border-left: 8px solid rgb(38, 37, 48);
+  transition: 0.3s;
+}
+
+.lightprev{
+  border-right:8px solid rgb(38, 37, 48);
+  transition: 0.3s; 
+}
+
+.darknext{
+  border-left: 8px solid lightgray;
+  transition: 0.3s;
+}
+
+.darkprev{
+  border-right:8px solid lightgray;
+  transition: 0.3s;
+}
+
+.w-layout-grid{
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 1rem;
+  grid-column-gap: 1rem;
+}
+
+.grid{
+  grid-column-gap: 1rem;
+  grid-row-gap: 1.5rem;
+  -ms-grid-columns: 0.25fr 0.25fr;
+  grid-template-columns: 0.25fr 0.25fr;
+  -ms-grid-rows: 5% 5%;
+}
+
+.html, .css, .js, .react{
+  width: auto;
+  height: 5.5rem;
+  transition: 0.3s;
+}
+.html:hover, .css:hover, .js:hover, .react:hover{
+  transform: scale(1.2);
 }
