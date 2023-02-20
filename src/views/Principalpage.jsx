@@ -51,10 +51,10 @@ export const PrincipalPage = ({theme}) => {
        </div>
       </div>
       <div className="RightSideWelcome">
-        {page === 0 && <> <Education /> </> }
-        {page === 1 && <> <Certification/> </> }
-        {page === 2 && <> <Experience/> </> }
-        {page === 3 && <> <Skills/> </> }
+        {page === 0 ? <> <Education />    </>         : <></>}
+        {page === 1 ? <> <Certification/> </>         : <></> }
+        {page === 2 ? <> <Experience/>    </>         : <></> }
+        {page === 3 ? <> <Skills/>        </>         : <></> }
           
           <div className="buttons">
             <div className={`ChangePage PreviousPage ${theme === true ? "lightmodebuttonprev" : "darkmodebuttonbackprev" } `} onClick={onPreviousPageChange}>
