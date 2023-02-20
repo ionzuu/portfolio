@@ -63,7 +63,8 @@
 }
 
 .ContainerEducation{
-  padding-top: 14%;
+  padding-top: 5%;
+  margin-right: 10%;
 }
 
 .Education{
@@ -102,10 +103,9 @@
 .buttons{
   width: 100%;
   position: fixed;
-  height: 70%;
   display: inline-flex;
   justify-content: center;
-  align-items: end;
+  bottom: 15%;
 }
 
 .PreviousPage{
@@ -170,6 +170,10 @@
   transition: 0.3s;
 }
 
+.modo{
+  margin-right: 15px;
+}
+
 .w-layout-grid{
   display: -ms-grid;
   display: grid;
@@ -185,16 +189,58 @@
 .grid{
   grid-column-gap: 1rem;
   grid-row-gap: 1.5rem;
-  -ms-grid-columns: 0.25fr 0.25fr;
-  grid-template-columns: 0.25fr 0.25fr;
+  -ms-grid-columns: 0.25fr 0.25fr 0.25fr 0.25fr;
+  grid-template-columns: .8fr 0.8fr 0.8fr 0.8fr;
   -ms-grid-rows: 5% 5%;
 }
 
 .html, .css, .js, .react{
   width: auto;
-  height: 5.5rem;
+  height: 3.5rem;
   transition: 0.3s;
 }
 .html:hover, .css:hover, .js:hover, .react:hover{
   transform: scale(1.2);
+}
+
+p {
+  z-index: 10;
+}
+
+.Credlybutton{
+  text-decoration: none;
+  border-radius: 20px;
+  box-shadow: 0 0 5px black;
+  padding: 0 20px 3px 20px;
+  color: black;
+  background: lightgray;
+  transition: 0.3s;
+}
+
+.Credlybutton:hover{
+  color: whitesmoke;
+  background: rgb(38, 37, 48);
+}
+
+.Credlybuttondark{
+  text-decoration: none;
+  border-radius: 20px;
+  box-shadow: 0 0 5px black;
+  padding: 0 20px 3px 20px;
+  color: whitesmoke;
+  background: rgb(38, 37, 48);;
+  transition: 0.3s;
+}
+
+.Credlybuttondark:hover{
+  color: black;
+  background: lightgray;
+}
+
+.Github{
+  margin-left: 15px;
+}
+
+.noteexp{
+  font-size: 1rem;
 }

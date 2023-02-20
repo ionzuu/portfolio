@@ -12,6 +12,7 @@ export const App = () => {
     <div className={`Container ${theme === true ? "LightTheme" : "DarkTheme" } `}>
       <header className="ContainerHeader">
         <nav className="thememode">
+          <p className='modo'>Theme:</p> 
           <div className={`ButtonMode ${theme === true ? "lightmodebuttonback" : "darkmodebuttonback" } `}>
             <span onClick={() => setOnThemeChange(!theme)} className={`mode ${theme === true ? "lightmodebutton" : "darkmodebutton" } `}></span>
           </div>
