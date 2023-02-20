@@ -19,7 +19,8 @@ export const PrincipalPage = ({theme}) => {
           I'm a systems administrator engineer
           </p>
         </div>
-        <a
+       <div className="buttonscontainers">
+       <a
         href="https://www.credly.com/users/jonathan-alexander-costilla/badges"
         title='Certification Page'
         target="_blank" 
@@ -47,6 +48,7 @@ export const PrincipalPage = ({theme}) => {
         className={`Github ${theme === true ? "Credlybutton" : "Credlybuttondark" } `}>
           Indeed
         </a>
+       </div>
       </div>
       <div className="RightSideWelcome">
         {page === 0 && <> <Education /> </> }

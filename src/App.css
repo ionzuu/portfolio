@@ -186,6 +186,12 @@
   grid-column-gap: 1rem;
 }
 
+.buttonscontainers{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .grid{
   grid-column-gap: 1rem;
   grid-row-gap: 1.5rem;
@@ -220,6 +226,7 @@ p {
 .Credlybutton:hover{
   color: whitesmoke;
   background: rgb(38, 37, 48);
+  scale: 1.2;
 }
 
 .Credlybuttondark{
@@ -235,10 +242,24 @@ p {
 .Credlybuttondark:hover{
   color: black;
   background: lightgray;
+  scale: 1.2;
 }
 
 .Github{
-  margin-left: 15px;
+  margin-left: 25px;
+}
+
+.Credlybutton:active{
+  transition: 0.1;
+  transform: scale(0.9);
+  background-color: darkgray;
+  box-shadow: 0 0 1px black;
+}
+.Credlybuttondark:active{
+  transition: 0.1;
+  transform: scale(0.9);
+  background-color: darkgray;
+  box-shadow: 0 0 1px black;
 }
 
 .noteexp{
