@@ -6,7 +6,7 @@ export const usePages = ( initpage = 0) => {
   const onNextPageChange = () => {
     //console.log(page);
     setchangePage(page+1);
-    if (page === 3) {
+    if (page === 4) {
       setchangePage(0);
     }
   }
@@ -15,7 +15,7 @@ export const usePages = ( initpage = 0) => {
     //console.log(page);
     setchangePage(page-1);
     if (page === 0) {
-      setchangePage(3);
+      setchangePage(4);
     }
   }
 

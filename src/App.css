@@ -265,3 +265,19 @@ p {
 .noteexp{
   font-size: 1rem;
 }
+
+.actualpage{
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.nopage{
+  opacity: 0;
+}
+
+.positionpage{
+  display: flex;
+  height: fit-content;
+  right: 5%;
+  position: fixed;
+}
