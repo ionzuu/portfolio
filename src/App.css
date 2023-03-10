@@ -269,6 +269,11 @@ p {
 }
 
 .actualpage{
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.actualpagecalc{
   width: inherit;
   opacity: 1;
   transition: 0.3s;

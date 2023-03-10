@@ -31,7 +31,7 @@ export const PrincipalPage = ({theme}) => {
         {page === 1 ? <div className={page === 1 ? 'actualpage' : 'nopage'}> <Certification/> </div>         : <></> }
         {page === 2 ? <div className={page === 2 ? 'actualpage' : 'nopage'}> <Experience/>    </div>         : <></> }
         {page === 3 ? <div className={page === 3 ? 'actualpage' : 'nopage'}> <Skills/>        </div>         : <></> }
-        {page === 4 ? <div className={page === 4 ? 'actualpage' : 'nopage'}> <Calculator/>        </div>         : <></> }
+        {page === 4 ? <div className={page === 4 ? 'actualpagecalc' : 'nopage'}> <Calculator/>        </div>         : <></> }
           
           <div className="buttons">
             <div className={`ChangePage PreviousPage ${theme === true ? "lightmodebuttonprev" : "darkmodebuttonbackprev" } `} onClick={onPreviousPageChange}>
