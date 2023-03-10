@@ -269,6 +269,7 @@ p {
 }
 
 .actualpage{
+  width: inherit;
   opacity: 1;
   transition: 0.3s;
 }
@@ -282,4 +283,21 @@ p {
   height: fit-content;
   right: 5%;
   position: fixed;
+}
+
+div > a {
+  background: transparent;
+  width: fit-content;
+  text-decoration: none;
+  height: fit-content;
+}
+
+a > img {
+  transition: 0.3s;
+  transform: scale(1);
+}
+
+a > img:hover {
+  transition: 0.3s;
+  transform: scale(1.3);
 }
